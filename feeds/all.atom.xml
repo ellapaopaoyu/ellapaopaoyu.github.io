@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Flat Land</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/all.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2013-10-26T01:35:00+02:00</updated><entry><title>To do list Recently</title><link href="http://localhost:8000/to-do-list-recently.html" rel="alternate"></link><updated>2013-10-26T01:35:00+02:00</updated><author><name>Forwil</name></author><id>tag:localhost:8000,2013-10-26:to-do-list-recently.html</id><summary type="html">&lt;p&gt;To do list:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Flat Land</title><link href="http://forwil.github.io/" rel="alternate"></link><link href="http://forwil.github.io/feeds/all.atom.xml" rel="self"></link><id>http://forwil.github.io/</id><updated>2013-10-26T01:35:00+02:00</updated><entry><title>To do list Recently</title><link href="http://forwil.github.io/to-do-list-recently.html" rel="alternate"></link><updated>2013-10-26T01:35:00+02:00</updated><author><name>Forwil</name></author><id>tag:forwil.github.io,2013-10-26:to-do-list-recently.html</id><summary type="html">&lt;p&gt;To do list:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;学懂Js，用熟，掌握Leaflet的基本用法，能实现多状态标注？使用部分插件优化展示效果。&lt;/li&gt;
 &lt;li&gt;继续读LDA。&lt;/li&gt;
@@ -10,7 +10,7 @@
 &lt;li&gt;找时间把Ruby大作业做了&lt;/li&gt;
 &lt;li&gt;看《可计算性导论》（2天内）&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;找时间写读书笔记。&lt;/p&gt;</summary></entry><entry><title>Need to write something</title><link href="http://localhost:8000/need-to-write-something.html" rel="alternate"></link><updated>2013-10-21T02:27:00+02:00</updated><author><name>Forwil</name></author><id>tag:localhost:8000,2013-10-21:need-to-write-something.html</id><summary type="html">&lt;p&gt;最近有点烦躁&lt;/p&gt;
+&lt;p&gt;找时间写读书笔记。&lt;/p&gt;</summary></entry><entry><title>Need to write something</title><link href="http://forwil.github.io/need-to-write-something.html" rel="alternate"></link><updated>2013-10-21T02:27:00+02:00</updated><author><name>Forwil</name></author><id>tag:forwil.github.io,2013-10-21:need-to-write-something.html</id><summary type="html">&lt;p&gt;最近有点烦躁&lt;/p&gt;
 &lt;p&gt;应该开始写点东西了，不然过的太没有实在感。&lt;/p&gt;
 &lt;p&gt;手头需要急切学习的东西有&lt;/p&gt;
 &lt;ol&gt;
@@ -29,7 +29,7 @@
 &lt;li&gt;习惯做学习，读书笔记&lt;/li&gt;
 &lt;li&gt;多写代码&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;感觉时间已经不多了。&lt;/p&gt;</summary><category term="publishing"></category></entry><entry><title>Homework-02</title><link href="http://localhost:8000/homework-02.html" rel="alternate"></link><updated>2013-09-30T01:12:00+02:00</updated><author><name>Forwil</name></author><id>tag:localhost:8000,2013-09-30:homework-02.html</id><summary type="html">&lt;h1&gt;问题重述&lt;/h1&gt;
+&lt;p&gt;感觉时间已经不多了。&lt;/p&gt;</summary><category term="publishing"></category></entry><entry><title>Homework-02</title><link href="http://forwil.github.io/homework-02.html" rel="alternate"></link><updated>2013-09-30T01:12:00+02:00</updated><author><name>Forwil</name></author><id>tag:forwil.github.io,2013-09-30:homework-02.html</id><summary type="html">&lt;h1&gt;问题重述&lt;/h1&gt;
 &lt;p&gt;这次作业略繁琐。需要在一个程序内支持传递运行参数，支持横向相通，纵向相通，扩展子区域(随意联通)。&lt;/p&gt;
 &lt;h2&gt;问题分析&lt;/h2&gt;
 &lt;p&gt;需要重新构造程序，支持传入参数，有-v-h-a三种，如果是c语言的话，在&lt;code&gt;main()&lt;/code&gt;函数内加&lt;code&gt;int argc,char *argv[]&lt;/code&gt;就可以引用传入的参数，其中文件名在&lt;code&gt;argv[argc-1]&lt;/code&gt;里，程序名在&lt;code&gt;argv[0]&lt;/code&gt;里，剩下的就是支持的选项。&lt;/p&gt;
@@ -201,7 +201,7 @@
 
 &lt;h3&gt;执行方法&lt;/h3&gt;
 &lt;p&gt;运行&lt;code&gt;./maxsum [options] &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;支持 -h -v -hv 和 -h -v&lt;/p&gt;</summary></entry><entry><title>Why we need framework</title><link href="http://localhost:8000/why-we-need-framework.html" rel="alternate"></link><updated>2013-09-21T15:02:00+02:00</updated><author><name>Forwil</name></author><id>tag:localhost:8000,2013-09-21:why-we-need-framework.html</id><summary type="html">&lt;p&gt;最近在学Django，一个python的web框架，深有体会。&lt;/p&gt;
+&lt;p&gt;支持 -h -v -hv 和 -h -v&lt;/p&gt;</summary></entry><entry><title>Why we need framework</title><link href="http://forwil.github.io/why-we-need-framework.html" rel="alternate"></link><updated>2013-09-21T15:02:00+02:00</updated><author><name>Forwil</name></author><id>tag:forwil.github.io,2013-09-21:why-we-need-framework.html</id><summary type="html">&lt;p&gt;最近在学Django，一个python的web框架，深有体会。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;如果你曾编写过网络应用程序。 那么你很有可能熟悉之前我们的 CGI 例子。&lt;/p&gt;
 &lt;ol&gt;
@@ -214,7 +214,7 @@
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;这正是为什么 Django 建立的原因。&lt;/p&gt;
-&lt;p&gt;原文来自: &lt;a href="http://djangobook.py3k.cn/2.0/"&gt;The Djangeo Book&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>homework-01</title><link href="http://localhost:8000/homework-01.html" rel="alternate"></link><updated>2013-09-21T14:39:00+02:00</updated><author><name>Forwil</name></author><id>tag:localhost:8000,2013-09-21:homework-01.html</id><summary type="html">&lt;h2&gt;参考书选择&lt;/h2&gt;
+&lt;p&gt;原文来自: &lt;a href="http://djangobook.py3k.cn/2.0/"&gt;The Djangeo Book&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>homework-01</title><link href="http://forwil.github.io/homework-01.html" rel="alternate"></link><updated>2013-09-21T14:39:00+02:00</updated><author><name>Forwil</name></author><id>tag:forwil.github.io,2013-09-21:homework-01.html</id><summary type="html">&lt;h2&gt;参考书选择&lt;/h2&gt;
 &lt;p&gt;选了电子版---[代码大全2英文版(完整清晰版)].chm&lt;/p&gt;
 &lt;p&gt;穷逼没钱买书好烦躁T.T&lt;/p&gt;
 &lt;h2&gt;问题分析&lt;/h2&gt;
@@ -337,4 +337,4 @@
 &lt;p&gt;output2.txt&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;28&lt;/p&gt;
-&lt;/blockquote&gt;</summary></entry><entry><title>Hello World!</title><link href="http://localhost:8000/hello-world.html" rel="alternate"></link><updated>2013-09-21T09:49:00+02:00</updated><author><name>Forwil</name></author><id>tag:localhost:8000,2013-09-21:hello-world.html</id><summary type="html">&lt;p&gt;This is the content of my "hello world!"&lt;/p&gt;</summary><category term="publishing"></category></entry></feed>
+&lt;/blockquote&gt;</summary></entry><entry><title>Hello World!</title><link href="http://forwil.github.io/hello-world.html" rel="alternate"></link><updated>2013-09-21T09:49:00+02:00</updated><author><name>Forwil</name></author><id>tag:forwil.github.io,2013-09-21:hello-world.html</id><summary type="html">&lt;p&gt;This is the content of my "hello world!"&lt;/p&gt;</summary><category term="publishing"></category></entry></feed>
