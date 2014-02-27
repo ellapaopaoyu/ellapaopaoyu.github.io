@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Archives</title>
-        <meta charset="utf-8" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="./theme/static/css/style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    </head>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+	<!--<link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">-->
+	<!--<script src="/theme/js/less.js" type="text/javascript"></script>-->
+	<link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Inconsolata' rel='stylesheet' type='text/css'>
 
-    <body id="index" class="archive">
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class=""><a href=".">Home</a></li>
-                    <li><a href="./pages/about-me.html">About me</a></li>
-                    <li class="active"><a href="./archives.html">Archives</a></li>
-                </ul>
-                <h3 class="text-muted"><a href=".">Flat land</a></h3>
-             </div>
+	<link href="/" type="application/atom+xml" rel="alternate" title="Flat land ATOM Feed" />
+
+		<title>Flat land|A Coding Monkey....</title>
+		<meta charset="utf-8" />
+</head>
+<body>
+	<section id="sidebar">
+		<figure id="user_logo">
+			<a href="/"><div class="logo">&nbsp;</div></a>
+			 <img src="/image/logo.jpg" alt="logo">
+		</figure>
+
+		<div class="user_meta">
+			<h1 id="user"><a href="/" class="">Forwil</a></h1>
+			<div id="subtitle">A Coding Monkey....</div>
+			<h2></h2>
+			<ul>
+						<li><a href="./pages/about-me.html">About me</a></li>
+					<li><a href="/feeds/all.atom.xml">RSS</a></li>
+			</ul>
+		</div>
+		<footer>
+			<address>
+				Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
+				theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
+			</address>
+		</footer>
+	</section>
+
+	<section id="posts">
+<h1>Archives for Flat land</h1>
 
 <dl>
-  
-            <h3><a href="./2014"  class="text">Archive for 2014</a></h3>
-            <ul class="archive-list">
-                <li><span class="text-muted">Mon 24 February 2014 &raquo; </span><a href="./sleep.html">Sleep</a></li>   
-                <li><span class="text-muted">Sun 23 February 2014 &raquo; </span><a href="./hello-world.html">Hello world!</a></li>   
-     </ul>
+    <dt>Mon 24 February 2014</dt>
+    <dd><a href="./sleep.html">Sleep</a></dd>
+    <dt>Sun 23 February 2014</dt>
+    <dd><a href="./hello-world.html">Hello world!</a></dd>
 </dl>
-            <footer id="contentinfo" class="footer">
-                    <nav class="pull-right bottom-nav">
-                        <a href="/None">RSS</a>
-                    </nav>
-                    <address id="about" class="vcard body">
-                    &copy; <a href=".">Flat land</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
-                    </address><!-- /#about -->
-            </footer><!-- /#contentinfo -->
-        </div><!-- container -->
-    </body>
+	</section>
+
+</body>
 </html>
