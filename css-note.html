@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+	<!--<link rel="stylesheet/less" type="text/css" href="/theme/css/style.less">-->
+	<!--<script src="/theme/js/less.js" type="text/javascript"></script>-->
+	<link rel="stylesheet" type="text/css" href="/theme/css/pygments.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:800,400,300|Inconsolata' rel='stylesheet' type='text/css'>
+
+	<link href="/" type="application/atom+xml" rel="alternate" title="Flat land ATOM Feed" />
+
+		<title>Flat land | A Coding Monkey....</title>
+		<meta charset="utf-8" />
+</head>
+<body>
+	<section id="sidebar">
+		<figure id="user_logo">
+			<a href="/"><div class="logo">&nbsp;</div></a>
+			 <img src="/image/logo.jpg" alt="logo">
+		</figure>
+
+		<div class="user_meta">
+			<h1 id="user"><a href="/" class="">Forwil</a></h1>
+			<div id="subtitle">A Coding Monkey....</div>
+			<h2></h2>
+			<ul>
+						<li><a href="./pages/about-me.html">About me</a></li>
+					<li><a href="/feeds/all.atom.xml">RSS</a></li>
+			</ul>
+		</div>
+		<footer>
+			<address>
+				Powered by <a href="http://pelican.notmyidea.org/">Pelican</a>,
+				theme by <a href="https://github.com/wting/pelican-svbtle">wting</a>.
+			</address>
+		</footer>
+	</section>
+
+	<section id="posts">
+	<header>
+		<h1>Forwil's blog</h1>
+		<h3>Posted Sun 09 March 2014</h3>
+	</header>
+	<article>
+		<h1 id="title">
+			<a href="./css-note.html" rel="bookmark"
+				title="Permalink to CSS note">CSS note</a>
+		</h1>
+		<h1>Instroduce</h1>
+<p>Those day I begin to read &lt; CSS: The Definitive Guide &gt;, It describe the standard of CSS2.0 and CSS2.1.</p>
+<p>In area of web front end, CSS is designed to control the style of HTML element. The first time I use CSS is in junior high school, when I used the blog of Baidu.com--hi.baidu.com. It provide the user the authority to edit the CSS file of their blog. At that time I just know how to adjust a few thing. </p>
+<p>After I go to university and major in computer science. I start to learn web develope. First I learn PHP+Mysql, and know how to write a little HTML with CSS. But still can\'t deal well with CSS style in layout. The CSS seems lose control under my code, Event I already wrote a complete website with Webpy and Bootstrap. I still don't understand how CSS control the layout of website.</p>
+<p>The function of CSS is to reduce the coupling of HTML code. Before CSS came out you need to add some attribute that describe style of HTML in basic HTML code, that mixed the "content" and "style" in one material. Sometimes you even have to put away the "content" to abtain some special "style". Here is a example:</p>
+<div class="highlight"><pre><span class="nt">&lt;font</span> <span class="na">size=</span><span class="s">&quot;+&quot;</span> <span class="na">face=</span><span class="s">&quot;Helvetical&quot;</span> <span class="na">color=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span>
+    Page Title
+<span class="nt">&lt;/font&gt;</span>
+</pre></div>
+
+
+<p>It mix up the "content" and "style", and is hard for program to know the tag "font" is represent a title.</p>
+<p>So we need something beyond HTML to describe the style of HTML element. It must easy to apply on HTML and has more ability to express more visual effect.</p>
+<h1>Element</h1>
+<p>There has two type of element of HTML, we treat them in two different way.</p>
+<h2>replaced element</h2>
+<p>It means the HTML tag will be replace by some attribute and do not contain the content of the doc. Such as img element, it replace by the image that the "src" refer to:</p>
+<div class="highlight"><pre><span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;howdy.gif&quot;</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<p>The "input" element is also a replaced element that we are familiar.</p>
+<h2>nonreplaced element</h2>
+<p>The most HTML element are nonreplaced element:</p>
+<div class="highlight"><pre><span class="nt">&lt;span&gt;</span>hi there<span class="nt">&lt;/span&gt;</span>
+</pre></div>
+
+
+<h1>display</h1>
+<p>inline element and block is treat different in CSS.  Every element has a default display and can be change by "display".
+Block element can contain a inline element, but inline element can't contain a block element.
+IF we change the display value into "none", it will disappear .</p>
+<h1>alernate style sheet</h1>
+<p>We can add a list of CSS sheet into one page, and let the user choice which one to apply. Throught add rel="alernate stylesheet" and  add title in link tag let user know:</p>
+<div class="highlight"><pre><span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="o">&gt;</span>
+    <span class="n">href</span><span class="o">=</span><span class="s">&quot;sheet1.css&quot;</span> <span class="n">title</span><span class="o">=</span><span class="s">&quot;Default&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s">&quot;alernate stylesheet&quot;</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="o">/&gt;</span>
+    <span class="n">href</span><span class="o">=</span><span class="s">&quot;bigtext.css&quot;</span> <span class="n">title</span><span class="o">=</span><span class="s">&quot;Big text&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s">&quot;alernate stylesheet&quot;</span> <span class="n">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="o">/&gt;</span>
+    <span class="n">href</span><span class="o">=</span><span class="s">&quot;zany.css&quot;</span> <span class="n">title</span><span class="o">=</span><span class="s">&quot;Crazy colors&quot;</span><span class="o">/&gt;</span>
+</pre></div>
+
+
+<h1>selector</h1>
+<h2>class selector</h2>
+<p>We use "class='x'" to let the element become the class "x", In CSS we can follow below to control the style of class x:</p>
+<div class="highlight"><pre><span class="p">.</span><span class="n">x</span><span class="p">{</span>
+    <span class="nl">style:</span><span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2>ID selector</h2>
+<p>We can also add "id='y'" to identity one element, The diffenence between class selector and ID selector is that ID selector can only apply in one ID(defind by XHTML):</p>
+<div class="highlight"><pre><span class="cp">#y{</span>
+    <span class="nl">style:</span><span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2>attr selector</h2>
+<p>CSS previde a powerful attr selector. Supose we want to select the element with class, we can follow below:</p>
+<div class="highlight"><pre><span class="o">*</span><span class="p">[</span><span class="n">class</span><span class="p">]{</span>
+    <span class="nl">style:</span><span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Or even more accurate, we can add "=" to select the element that has given value, such we want to get the link value link to certain url:</p>
+<div class="highlight"><pre><span class="o">*</span><span class="p">[</span><span class="n">href</span><span class="o">=</span><span class="s">&quot;url&quot;</span><span class="p">{</span>
+    <span class="nl">style:</span><span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>We also has special matching method:</p>
+<ol>
+<li><em>~=</em>: word match</li>
+<li><em>^=</em>: begin match</li>
+<li><em>$=</em>: end match</li>
+<li>*<em>=</em>: contain match</li>
+</ol>
+<h2>DOM tree selector</h2>
+<p>If we want to select the "em" descendant of "h1", we can follow the code below:</p>
+<div class="highlight"><pre><span class="n">h1</span> <span class="n">em</span><span class="p">{</span>
+    <span class="nl">style:</span><span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>If we only want to select the "em" children "h1":</p>
+<div class="highlight"><pre><span class="n">h1</span> <span class="o">&gt;</span> <span class="n">em</span><span class="p">{</span>
+    <span class="nl">style:</span><span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Select brother? For example we want to clear the top-distance of the follow paragraph of h1. We can:</p>
+<div class="highlight"><pre><span class="n">h1</span> <span class="o">+</span> <span class="n">p</span><span class="p">{</span>
+    <span class="n">margin</span><span class="o">-</span><span class="n">top</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2>pseudo-class</h2>
+<p>Pseudo-class is designed to describe the special action of a element, It means if the element be treat in certain way it become the pseudo-class. To defind the style of pseudo-class is like to defind "when something happen, you become ..."</p>
+<ol>
+<li><em>:visited</em> if a link is visited</li>
+<li><em>:focus</em>   if it abtain the focus of input</li>
+<li><em>:hover</em>   if the mouse stay over </li>
+<li><em>:active</em>  some be click by mouse</li>
+</ol>
+<h2>other selector</h2>
+<div class="highlight"><pre><span class="n">p</span><span class="o">:</span><span class="n">first</span><span class="o">-</span><span class="n">child</span><span class="o">{</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">weight</span><span class="o">:</span> <span class="n">bold</span> <span class="o">;}</span>
+<span class="n">p</span><span class="o">:</span><span class="n">first</span><span class="o">-</span><span class="n">letter</span><span class="o">{</span>
+    <span class="n">color</span><span class="o">:</span> <span class="n">red</span> <span class="o">;}</span>
+<span class="n">p</span><span class="o">:</span><span class="n">first</span><span class="o">-</span><span class="n">line</span><span class="o">{</span>
+    <span class="n">color</span><span class="o">:</span> <span class="n">purple</span><span class="o">;}</span> 
+<span class="o">*:</span><span class="n">lang</span><span class="o">(</span><span class="n">fr</span><span class="o">){</span> 
+    <span class="n">font</span><span class="o">-</span><span class="n">style</span><span class="o">:</span> <span class="n">italic</span> <span class="o">;}</span>
+<span class="n">h2</span><span class="o">:</span><span class="n">before</span> <span class="o">{</span> 
+    <span class="n">content</span><span class="o">:</span> <span class="s2">&quot;}}&quot;</span><span class="o">;</span> 
+    <span class="n">color</span><span class="o">:</span> <span class="n">silver</span><span class="o">;}</span>
+<span class="n">body</span><span class="o">:</span><span class="n">after</span> <span class="o">{</span> 
+    <span class="n">content</span><span class="o">:</span> <span class="s2">&quot; The end.&quot;</span><span class="o">;}</span>
+</pre></div>
+
+
+<h1>spcificity</h1>
+<ol>
+<li>!important</li>
+<li>with ID</li>
+<li>class-selector,pseudo-class</li>
+<li>first-letter, before, after</li>
+<li>late more important </li>
+</ol>
+<h1>color</h1>
+<div class="highlight"><pre><span class="n">color</span><span class="o">:</span> <span class="n">black</span><span class="o">;</span>
+<span class="n">color</span><span class="o">:</span> <span class="n">rgb</span><span class="o">(</span><span class="mi">50</span><span class="o">%,</span><span class="mi">50</span><span class="o">%,</span><span class="mi">50</span><span class="o">%);</span>
+<span class="n">color</span><span class="o">:</span> <span class="n">rgb</span><span class="o">(</span><span class="mi">0</span><span class="o">%,-</span><span class="mi">40</span><span class="o">%,</span><span class="mi">200</span><span class="o">%);</span>  <span class="o">--&gt;</span>  <span class="n">rgb</span><span class="o">(</span><span class="mi">0</span><span class="o">%,</span><span class="mi">0</span><span class="o">%,</span><span class="mi">100</span><span class="o">%)</span>
+<span class="n">color</span><span class="o">:</span> <span class="n">rgb</span><span class="o">(</span><span class="mi">255</span><span class="o">,</span><span class="mi">255</span><span class="o">,</span><span class="mi">255</span><span class="o">);</span>
+<span class="n">color</span><span class="o">:</span> <span class="err">#</span><span class="n">FF0000</span><span class="o">;</span>
+<span class="n">color</span><span class="o">:</span> <span class="err">#</span><span class="mi">6</span><span class="n">F6</span><span class="o">;</span>    <span class="o">--&gt;</span> <span class="err">#</span><span class="mi">66</span><span class="n">FF66</span>
+</pre></div>
+
+
+<h1>size</h1>
+<p>In CSS:</p>
+<ul>
+<li>1em it means the lenth of now font's size.</li>
+<li>1ex offen means the size of downcase "x" of now font, maybe 0.5em.</li>
+<li>1px means 1pixel</li>
+</ul>
+<h1>Text</h1>
+<ul>
+<li>text-indent is the indentation, offen use xem. It can be negative</li>
+<li>text-align: left | center | right | justify </li>
+<li>line-height: <code>(line-height - font-size) / 2</code> is the up and down gap.</li>
+<li></li>
+</ul>
+
+		<div id="article_meta">
+				Category:
+					<a href="./category/oh.html">Oh</a>
+				<br />Tags:
+					<a href="./tag/css.html">css</a>
+		</div>
+	</article>
+
+	<footer>
+		<a href="./" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
+	</footer>
+
+	<div id="comments">
+		<h2>Comments</h2>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_identifier = "css-note.html";
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'http://forwilgithubio.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
+	</div>
+
+	</section>
+
+</body>
+</html>
