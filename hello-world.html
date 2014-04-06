@@ -39,38 +39,41 @@
 	<section id="posts">
 	<header>
 		<h1>Forwil's blog</h1>
-		<h3>
-			<script type="text/javascript">
-				var currentDate = new Date();
-				var day = currentDate.getDate();
-				var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec" ];
-				var month = monthNames[currentDate.getMonth()].toUpperCase();
-				var year = currentDate.getFullYear();
-				document.write(month + " " + day + ", " + year);
-			</script>
-		</h3>
+		<h3>Posted Sun 23 February 2014</h3>
 	</header>
+	<article>
+		<h1 id="title">
+			<a href="http://forwil.github.io/hello-world.html" rel="bookmark"
+				title="Permalink to Hello world!">Hello world!</a>
+		</h1>
+		<hr/>
+		<p>Begin to use pelican in page.github!</p>
 
-	<dl>
-		<ol>
-				<li>
-					<h1 class="title">
-						<a href="http://forwil.github.io/css-note.html" rel="bookmark" title="Permalink to CSS note">CSS note</a>
-					</h1>
-					<abbr class="published" title="2014-03-09T12:20:00">Sun 09 March 2014</abbr>
-				<div class="entry-content"> <h1>Introduction</h1>
-<p>Those day I begin to read &lt; CSS: The Definitive Guide &gt;, It describe the standard of CSS2.0 and CSS2.1.</p>
-<p>In area of web front end, CSS is designed to control the style of HTML element. The first time I use CSS is in junior high school, when I ...</p> </div>
-				</li>
-				<li>
-					<h1 class="title">
-						<a href="http://forwil.github.io/hello-world.html" rel="bookmark" title="Permalink to Hello world!">Hello world!</a>
-					</h1>
-					<abbr class="published" title="2014-02-23T23:59:00">Sun 23 February 2014</abbr>
-				<div class="entry-content"> <p>Begin to use pelican in page.github!</p> </div>
-				</li>
-		</ol>
-	</dl>
+		<div id="article_meta">
+				Category:
+					<a href="http://forwil.github.io/category/oh.html">Oh</a>
+				<br />Tags:
+					<a href="http://forwil.github.io/tag/pelican.html">pelican</a>
+		</div>
+	</article>
+
+	<footer>
+		<a href="http://forwil.github.io/" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
+	</footer>
+
+	<div id="comments">
+		<h2>Comments</h2>
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_identifier = "hello-world.html";
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = 'http://forwilgithubio.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
+	</div>
 
 	</section>
 
