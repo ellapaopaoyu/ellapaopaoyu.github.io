@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>“的确，不应该责怪唱机” - Flat land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Forwil" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />	
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="http://forwil.github.io/favicon.ico" />
+
+  </head>
+
+  <body>
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+	   <div class="navbar-header">
+		<button type="button" class="navbar-toggle" 
+				data-toggle="collapse" data-target="#main-navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="http://forwil.github.io/" rel="home">Home</a>
+       </div>
+
+      <div class="collapse navbar-collapse" id="main-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <!-- <li> <a href="http://forwil.github.io/">Home</a> </li> -->
+               <li><a href="http://forwil.github.io/pages/about-me.html">About me</a></li>
+            <li class="divider"></li>
+          <li><a href="http://forwil.github.io/archives.html">Archives</a></li>
+          <li class="divider"></li>
+        </ul> <!-- /nav -->
+      </div> <!-- /navbar-collapse -->
+	  </div> <!-- /container -->
+    </div> <!-- /navbar -->
+
+	<div class="jumbotron" id="overview">
+	  <div class="container">
+		<h1><a href="http://forwil.github.io/">Flat land</a></h1>
+		<p class="lead">A Coding Monkey....</p>
+	  </div>
+	</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9" id="content">
+<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+  <header>
+<div class="article-header">
+    <abbr class="article-prehead">
+	  Fri 09 November 2012
+	</abbr> <!-- /.article-prehead -->
+	<h1>
+	  <a href="http://forwil.github.io/de-que-bu-ying-gai-ze-guai-chang-ji.html" rel="bookmark"
+		 title="Permalink to “的确，不应该责怪唱机”">
+		“的确，不应该责怪唱机”
+	  </a>
+	</h1>
+    <div class="article-posthead">
+	  <p>
+          Posted by <a href="http://forwil.github.io/author/forwil.html">Forwil</a>
+		in 
+		<a href="http://forwil.github.io/category/oh.html">
+		  Oh</a>
+		&nbsp;&nbsp;
+	  </p>
+	</div> <!-- /.article-posthead -->
+</div> <!-- /.article-header -->  </header>
+  <div class="content-body" itemprop="text articleBody">
+	<h1 align="center"></h1>
+
+<p>第一次接触到关于哥德尔不完备性定理是在高中的数学练习册上，看到的表述大概是是：形式系统无法证明自身的完备性，一知半解。但隐隐约约觉得挺震撼的，因为数学逻辑从一直以来来看都是无所不能的，能解决大部分能想到现实问题，至少也能保证证明的命题要么真要么假，是无矛盾的。而哥德尔定理这样的表述，似乎带来了一种危险的可能。</p>
+<!--more-->
+
+<p>接下去听到关于哥德尔定理是在大一上的两门课，一门是中科院院士来开的前沿数学选讲，提到了这个命题的严格表述，但只是简单地叙述了一下没有细讲。另一个是在选修课《计算简史》上老师的介绍，他比较简略地介绍了一下哥德尔证明这个诡异命题所用的方法，包括哥德尔配数，如何构造自指的命题。</p>
+<p>现在正式给出哥德尔不完备性定理的形象性叙述，有两种常见的表述：</p>
+<p><strong>1 </strong><strong>一个无矛盾的公理化理论体系如果包含算术公理体系，那么存在一个陈述句其真假不能再这个理论中判断。</strong></p>
+<p><strong>2 </strong><strong>一个公理化理论体系如果包含算术公理体系，当它无矛盾时，其无矛盾性无法在这个体系内证明。</strong></p>
+<p>这两条理论彻底否定了关于希尔伯特提出的关于数学基础的三个问题：数学的完备性，相容性，可判定性。</p>
+<p><strong>完备性：</strong>一个在形式系统中能表述出来的命题，必然能够通过命题演算来推知它要么为真，要么为假。即从公理可以推出整个体系的全部命题。</p>
+<p><strong>相容性：</strong>从公理系统推导出来的定理集合，不能同时包含一个命题的真和假，即定理是无矛盾的。</p>
+<p><strong>可判定性：</strong>对于所有的数学陈述，可以找到一个算法，判定它的真假性。</p>
+<p>从上面的表述来看，一个体系如果承认无矛盾性（相容性），那么必定不完备，而且它如果是相容的，那么在它自身看来是无法证明自身的相容性的。粉碎了希尔伯特关于数学天堂的美梦。</p>
+<p>希尔伯特计划是非常诱人的。所有数学都可以形式化，即让数学命题都能用符号表达出来，让数学家都能用定义好的规则来处理这些形式化的陈述，摆脱了自然语言的模糊性。取而代之的是严格的符号语言。然后，如果数学是完备的，那么所有为真的命题都能被证明，而且相容性能保证推出的定理的无矛盾性。再加上最后找到的那个算法：可以机械地判定数学陈述的对错。这样一来，如果这个计划完成了，意味着，一旦我们构造好有限的公理，用上机器证明，只要时间允许，我们所有的数学中的命题都能通过机器来给出或真或假的结果。<em></em></p>
+<p><em>我们必须知道，我们将会知道</em></p>
+<p>这就是希尔伯特的充满野心的计划。多少人也曾经如此坚信着。</p>
+<p>很可惜，年轻的哥德尔用他天才性的构造，让正在美梦中酣睡的人醒来。</p>
+<p>第一次读到哥德尔完整的证明陈述，是在图书馆的一本书《哥德尔证明》上看到的，在之前阅读了一本书《数学：确定性的丧失》，讲到从数学的发展，从建立在直觉上的数学感性发展，到理性逻辑的觉醒，欧几里得天才性的给几何学公理化，进而让人们意识到，如果我们先找出几个足够精简，从人类直观看来自然而然的公理出发，建立起来一系列定理都是正确的。这把人类从陷入语言理解而产生的争论中解救出来，彻底地严格化，无二义化了几何学。确定性达到了顶峰，哥德尔的出现，使数学家们开始审视，是否自己错误地要求了公理化体系的能力。</p>
+<p>《哥德尔证明》这本书几乎是完整地介绍了哥德尔的证明，我们不得不再把哥德尔定理的第一个表述列出来看看究竟：</p>
+<p><strong>一个无矛盾的公理化理论体系如果包含算术公理体系，那么存在一个陈述句其真假不能再这个理论中判断。</strong></p>
+<p>包含算术公理体系是这个证明的一个很关键的前提，一个系统如果具备了定义自然数的能力，那么从哥德尔的构造来看，它就具备了陈述自身的能力。说到这里我们很容易想到关于陈述自身的命题所带来的悖论----理发师悖论：</p>
+<p><strong>一个理发师给 </strong><strong>不给自己理发 </strong><strong>的人 </strong><strong>理发。</strong></p>
+<p>那么我们问：这个理发师给不给自己理发，如果他给自己理发的话，那么它就违背了他的“只给不给自己理发的人理发”这个条件，如果他不给自己理发，那么由他的定义，他就必须得给自己理发。于是这个理发师给不给自己理发都是矛盾的。</p>
+<p>哥德尔很巧妙地借鉴了这个思想，但是，对于理发师悖论，其存在是建立在自然语言上的。对于形式化数学系统，一切表述都得是合理的，得是符合定义的。如何严格而无二义地在形式系统内表述出自身，是哥德尔证明中的关键。</p>
+<p>在此之前我们先考虑一个问题：如何构造一个程序，程序的运行结果是打印自身？</p>
+<p>仔细想想，这几乎是不可能的事，我们很容易想到简单地用c语言的printf函数，那么printf里边包含了一个字符串，我们可以把我们程序的前部分都放在printf里面当做一个字符串来输出。但是问题是，我们每敲入一个新的字符，我们的程序长度又变长了一点，那么导致我们还得在敲入一个新的字符。这使得这个步骤只能无限进行下去。就相当于我们要在黑板上画出黑板本身，我们会画出一个长方形，可是画完你会发现，黑板自身被改变了，以至于你不得不再在之前所话的长方形内再画一个长方形，永无止尽。</p>
+<p>但我们可以考虑用另一种方法。</p>
+<p>以下程序摘自《GEB》</p>
+<p>define procedure “eniuq” [template]:</p>
+<p>print[ template,left-bracket,quote-mark,template,quote-mark,right-bracket,period ].</p>
+<p>eniuq</p>
+<p align="left">print[template,left-bracket,quote-mark,template,quote-mark,right-bracket,period].</p>
+
+<p>eniuq’]</p>
+<p>首先程序定义了一个”eniuq”的过程，传入参数”template”，输出”template”+左括号+单引号+”template”+单引号+右括号+句号。主程序就是调用这个过程，而有趣的是，传入的字符串恰好是整个过程+eniuq，这样一来从过程的输出格式来看，相当于又重新构造了整个程序。</p>
+<p>这边用到的一个基本想法是---使用模块。也就是说，用一个符号来代表另一个整体，比如说这个程序用的就是template来表示一段代码。从字上得到的信息来说，template只是一个标示符，但深入到程序的运作来说，它实际上代表着大段其他的代码的字符串。</p>
+<p>由此看来，用数据的两种层次的表达，能实现严格的自指。</p>
+<p>哥德尔用了另外一种表达层次变换的方法：哥德尔配数。因为公理系统能定义自然数（前提），那么他给每个符号规定了一种配数的方法。使得表面上看是一串无规则的数，通过规则来变换就能得出它的另一层信息（数学形式化命题）。对于每一个数学符号陈述，又可以用一串数字来表示。所以说，在哥德尔配数的作用下，就能用数字来和自身的命题符号集合做一个同构，这样，通过对数字的陈述，可以间接地陈述自身的逻辑系统。</p>
+<p><img src="http://www.forwil.co.de/photo/dd.png" alt="哥德尔公式" /></p>
+<p>通过一系列构造，哥德尔最终得到上边这个公式，这个公式字面上的意思是“不存在哥德尔配数为x的公式串，使得sub(n,17,n)所代表的公式是x公式串的推论”翻译成数学意义就是“哥德尔数为sub(17,n,17)的公式是不可证明的”，(sub函数的意思是把n所代表的公式中的17标号的变元替换成n这个数)</p>
+<p>现在，这个公式存在一个不定的变元n。我们先用g表示上边这个公式的哥德尔配数，把g替换掉公式里的n。这样得到了一个最终的哥德尔命题G，注意到，这边用了一个很巧妙的方式，我们在把g替换掉n的同时，由sub(n,17,n)的定义，即该函数表示着，用数字n来替换n为哥德尔配数的公式中的变元。这刚好就是我们在公式层面所做的事！于是这个命题就变成了如下陈述“本公式是不可证明的”，而经过和理发师悖论的同样推导，我们得出这个命题无论是真的还是假的，都会导致矛盾。</p>
+<p>我们看到，有两个因素带来了不完备性，一个是：这个公理体系强大到能定义自然数，这使得描述自身的命题得以构造。另一个是我们首先承认了这个系统的相容性，于是推出了上边这个命题：非真非假。而但这个命题从元数学的角度来看确实恰恰说明了自身的正确性，我无法在体系内得到证明。可见我们得到了一个真命题，但无法在公理体系中得到证明，完备性的美梦破灭。</p>
+<p>我们得到了哥德尔定理的第一个表述。而第二个表述是第一个命题的推论。</p>
+<p>关于哥德尔的证明中，有很多值得玩味的地方。一个是，观察事物的层次的不同，抽象层次的不一样所得到的信息也不一样。比如说文字就有很多层次的描述，相对较低的层次的比划层次，看到的一些线段组成的一些扭曲的图形，费劲脑汁你也无法从这一堆扭曲的图像中得到什么信息---如果你不具备基本的关于语言的模式训练的话。另一个层次是我们认识每个字的基本含义如说对于名字的具体现实所指（同构），那么么我们就能基本上读懂一段文字描述的对象是什么。接下来便是我们从所有表层意思中提取的关于文字陈述的事件的脑中再现，关于作者的情感倾向，个人喜好，文化程度，这些都不是文字符号本身所带有的信息，必须具有一定的模式识别能力的智能个体才能实现。当然还能想到更高层次的信息，从一些描述的模式，能够以某种很高的概率推断出一个匿名文章的作者。这些都是信息层次不同，解释不同带来对文字的不同解读。哥德尔的创造性正是因为他用了一个精妙的同构和关于符号的解释的奇特的<strong>环</strong>，构造出自身陈述对于自身的同构，自古以来循环自指都是悖论产生的撬动点。哥德尔定理也是如此：哥德尔配数从一个简单的层次来看它只代表着数字，但我们能给与它描述符号命题的解释，完成更上一层次的解释，而通过这样的解释来反作用于陈述自身。哥德尔用很大的篇幅去证明，这样的命题确实是可构造的，是原始递归的。</p>
+<p>它引发了我们关于信息的思考，关于抽象层次的思考。这不禁让我想到，人类由于哥德尔的不完备性定理的到来而产生的一些想法：既然公理系统有无法证明的命题，但这个命题是我们人脑发现的，这是不是就说明了人的直觉有可能是高于机器逻辑而存在的。这就否定了人类造出真正的人工智能的可能了么？这是一个千古以来一直有争论的命题。侯世达（GEB的作者）从对哥德尔不完备性定理的理解得出了不一样的看法。</p>
+<p>我们人类是否能够跳出自身----或者是，计算机程序是否能跳出自身----仍是极为引人入胜的。当然程序有可能修改自己，无论是数据，或者是程序，在计算机的层次看来都是一样的01串，一个程序可以被当做数据来处理，一段数据在某种情况下也能被当做程序来执行。当然，程序是有可能自己修改自己----不过这种可修改性必须首先是该程序中固有的部分，所以不能算是“跳出系统”的例子。不论一个程序怎样迂回曲折地来到自己外面，它仍然遵循自身的固有规则。</p>
+<p>先来看看《GEB》里边用了一个关于“高保真唱机”来和“足够强大的公理化体系”来作对比。假设存在一个能播放任何唱片的唱机（为文中的<strong>螃蟹</strong>拥有），从某种意义上，它就是完备的。文中的乌龟对于这样唱机的存在发起了攻击：</p>
+<hr />
+<p>…..</p>
+<p><strong>乌龟：</strong>位子上，在那儿（阿基里斯找到了唱片。）看唱片是看不出什么的，关键在于曲子的旋律。唱机播放这种旋律时会产生特殊的音响效果。我可以给你详细讲讲。在回访螃蟹之前，我去螃蟹买唱机的那家商店，问清了制造那种唱机的工厂。然后我给制造商写了一封信，向他们索取设计图纸。得到图纸以后，我仔细分析了那种唱机的结构，发现只要附近有某种特殊的声音，就会引起唱机的共振，最终导致它破碎。</p>
+<p><strong>阿基里斯：</strong>技术方面的问题你倒是挺在行的。</p>
+<p><strong>乌龟：</strong>巧妙地把这种声音组织成旋律，就是那首“我不能在唱机1上播放”。</p>
+<p>…..</p>
+<p><strong>阿基里斯：</strong>进一步地解释让我来作：如果一个唱机----就是唱机X吧---如果有足够的高保真度，那么当它试图播放曲子“我不能在唱机X上播放”时，恰恰就引起了那种粉碎它的共振……所以它是不完备的。然而唯一能绕开这种打击的方法----即让唱机X是低保真的----却更直接地表明了它的不完备。看来任何唱机都会有这样或那样的弱点，因此所有的唱机都是由缺陷的，可怜的螃蟹，无论是高保真唱机还是低保真唱机，他都注定要失败的。</p>
+<p><strong>乌龟：</strong>他的问题不在于使用了什么“有缺陷”的唱机，我不认为谈论唱机的缺陷有什么意义，一台唱机本来就不可能做到你希望它做的所有事情。如果一定要说什么地方有缺陷，那也不是唱机，而是你对它们的期望----对于唱机能做些什么事情的期望。螃蟹恰恰就是充满了这类不现实的期望。</p>
+<p><strong>阿基里斯：</strong>的确，不应该责怪唱机。</p>
+<hr />
+<p>这个故事中分别都是哥德尔定理的“同构副本”。GEB作者给出了所作的同构表：</p>
+<table border="0" cellspacing="0" cellpadding="0">
+
+<tbody>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">唱机</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">数论的公理系统</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">低保真唱机</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">“弱”的公理系统</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">高保真唱机</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">“强”的公理系统</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">“完备的”唱机</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">数论的完全系统</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">唱机的“图纸”</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">形式系统的公理与规则</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">唱片</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">形式系统的符号串</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">可以播放的唱片</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">公理系统的定理</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">不能播放的唱片</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">公理系统的非定理</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">声音</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">数论的真陈述</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">可重现的声音</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">系统中经过了解释的定理</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">不可重现的声音</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">非定理的真陈述</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">曲名：</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">哥德尔串的隐含意义</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">“我不能在</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">“我不能在</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td valign="top" width="148">
+
+<p align="center">唱机X上播放”</p>
+
+</td>
+
+<td valign="top" width="49">
+
+<p align="center">↔</p>
+
+</td>
+
+<td valign="top" width="247">
+
+<p align="center">形式系统X中导出”</p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<p>但是我们似乎有一个方法能消除哥德尔怪圈，那就是，使用比数论公理系统更强大、包含数论体系的系统，来证明数论公理体系是完全的。不过这又引发了一个问题：这个新的“强”的系统本身是不是完全的？</p>
+<p>能跳出这个循环的方法之一，就是使用“弱”的推理系统来证明数论公理系统，那么我们就战胜了关于绕圈子的反对意见。如果我们能用“轻的”系统去说明一个“重的”系统使一致的，那么我们就的确做成一些事情了。</p>
+<p>但是哥德尔的工作表明，任何用有穷方法这条细绳去牵引数论系统一致性这条粗绳的努力都是注定要失败的。哥德尔证明了，要想牵引粗绳，不能用更细的绳子，细绳中没有足够结实的。少来些隐喻，我们可以说：<strong>任何一个强的足以证明数论系统的一致性的系统，起码与数论系统本身一样强</strong>，从而绕圈子是不可避免的。</p>
+<p>在做mips-lite指令的时候我突然意识到，对于简单的模块化的设计(如logicsim画出的电路图)，确实有能力去分析各部件的功能和作用范围，一个指令能被分割成几个彼此分割的阶段，一一完成之后再统一有数据的存储或输出。在设计时模块化是必要的。可一旦要想把设计图做成现实的电路，为了节省电路开支，必须用尽量精简的表达方式来重新写出电路，一个模块化的指令decoder一经卡诺图化简后已经很难看出它的功能是什么。如果深入到一颗cpu内去观测一条指令是如何通过整个庞大到可怕的电路时，很可能就像去理解神经系统中的一个冲动传过大脑皮层一样。一个复杂而庞大的系统，模块化的丧失是必然的，而认为人类的大脑是没有办法用电路逻辑来实现，这个定论未免过于武断。</p>
+<p>从神经元层面理解思维会像从门电路层面理解程序一样惊心动魄。但我们还是通过一步步的抽象，把思维的层次网上延伸，对计算机内隐去庞大的物理基础，抽象出指令集，抽象出高级程序语言，抽象出操作系统，成为对用户友好的交互界面。而我们去使用计算机无需理解它底层的逻辑结构。这就像我们能用大脑去思考，而无需关心神经元“盲目地”跳动。的确，直到现在来说，人类的意识，对现实世界的脑中同构，究竟是用什么机理来实现的。庞大的神经冲动从某种角度来说确实只能唯心地理解为“盲目的”。</p>
+<p>抛开确定性，我们不要一个根据粒子的位置和动量所作出的描述。我们想要一个把神经活动与“信号”联系起来的描述----然后再把信号联系与“符号”。这种从底层物理硬件到高层心理软件的翻译类似于从数论到元数学判断的翻译。你还会记得，正是这个翻译中出现的层次构成了哥德尔的不完全性的特征。很可能正是一种类似的层次交叉构成了我们几乎不可分析的自我意识。</p>
+<p>层次的变换，不同事物之间的同构，怪圈的出现。埃舍尔的的画，巴赫的曲，这样的奇异的环出现在很多艺术中用来对人类认知提出试探性挑战。是否意识中存在某些部件或特性，对于矛盾，对于不一致会有物理性的抗拒性。在数理发展过层中，曾被无数人诟病的直觉主义。很多认知和知识，只能肯定地说是人类意识对于现实世界的一种“同构”，而这种同构是否就是真实的世界，恐怕没有办法回答。 《三体》中提到的“射手和农场主”很深刻地提出了这个忧虑。</p>
+<p>GEB的作者侯世达（其父亲是父亲是诺贝尔奖得主、物理学家罗伯特·霍夫施塔特），30多岁便写了旷世奇书《Godel，Escher，Bach，一条永恒的金带》。于28年后出版了新书《I am a strange loop》(我是一个奇异的环)。而本书的扉页上写道，“献给我的妹妹劳拉，她能读懂。还有不能读懂的，我们的妹妹莫利。”妹妹莫利天生不能学会任何 语言，父母四处求医，毫无希望。妹妹对语言的隔绝，也是侯世达探索“自我”和人脑的奥秘的动力之一。令人叹息的是，侯世达的父亲是诺贝尔物理奖得主，他自己也是才华过人，而家中却有这样无奈的痛苦，真是天嫉英才。“我”，“非我”，天才和天生隔绝语言的妹妹——这个充满悖论的悲伤世界。“我”，“我是”， 智慧的回声未必不朽，它只是稀释或者扩大了自我而已。</p>
+<p>年轻的侯世达信心满满，而几十年过后，60多岁的他的这部作品却包含着浓厚的自我和悲伤。正如书名说的，对于自我，本我的探索，很难不陷入矛盾和难以躲开的怪圈。</p>
+<p>哥德尔为我们开启了一个更为宽广的世界，但究竟在最求真理的路上还有多远，依然没有人能回答。</p>
+<p align="left"><strong>参考文献：</strong></p>
+
+<p align="left"><a href="http://slowcigar.diandian.com/post/2010-11-13/40027893283">http://slowcigar.diandian.com/post/2010-11-13/40027893283</a>慢州城 侯世达：我是一个奇异的环</p>
+
+<p align="left">《哥德尔，埃舍尔，巴赫—集异壁之大成》[美]侯世达(Douglas R.Hofsadter) 2011年7月北京第五次印刷  商务印书馆</p>
+
+<p align="left">《哥德尔证明》 欧内斯特·内格尔（Ernest Nagel） / 詹姆士 R. 纽曼 （James R. Newman）2008 3 中国人民大学出版社</p>
+  </div>
+
+
+<div class="article-tag-list">
+<span class="label label-default">Tags</span>
+	<a href="http://forwil.github.io/tag/old.html"><i class="fa fa-tag"></i>old</a>&nbsp;
+</div>
+  <hr />
+
+  <div class="comments">
+	<h2>Comments</h2>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+				   (function() {
+						var dsq = document.createElement('script');
+						dsq.type = 'text/javascript'; dsq.async = true;
+						dsq.src = '//forwilgithubio.disqus.com/embed.js';
+						(document.getElementsByTagName('head')[0] ||
+						 document.getElementsByTagName('body')[0]).appendChild(dsq);
+				  })();
+	</script>
+  </div>
+</article>
+        </div><!-- /content -->
+
+        <div class="col-md-3 sidebar-nav" id="sidebar">
+
+<div class="row">
+<div class="col-xs-6 col-md-12">
+<h4><i class="fa fa-comment fa-fw fa-lg"></i> Social</h4>
+<ul class="list-unstyled social-links">
+</ul>
+</div>
+
+<div class="col-xs-6 col-md-12">
+<h4><i class="fa fa-folder fa-fw fa-lg"></i> Categories</h4>
+<ul class="list-unstyled category-links">
+  <li><a href="http://forwil.github.io/category/oh.html" >
+    <i class="fa fa-folder-open fa-fw fa-lg"></i> Oh</a></li>
+</ul>
+</div>
+
+</div> <!-- /row -->
+
+<h4><i class="fa fa-tags fa-fw fa-lg"></i> Tags</h4>
+<p class="tag-cloud">
+<span class="tag-3">
+    <a href="http://forwil.github.io/tag/learning.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>learning
+    </a>
+</span>
+<span class="tag-4">
+    <a href="http://forwil.github.io/tag/thought.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>thought
+    </a>
+</span>
+<span class="tag-4">
+    <a href="http://forwil.github.io/tag/pelican.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>pelican
+    </a>
+</span>
+<span class="tag-4">
+    <a href="http://forwil.github.io/tag/css.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>css
+    </a>
+</span>
+<span class="tag-1">
+    <a href="http://forwil.github.io/tag/old.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>old
+    </a>
+</span>
+</p>
+
+<h4><i class="fa fa-rss fa-fw fa-lg"></i> Feeds</h4>
+<ul class="list-unstyled">
+</ul>
+
+<hr />
+
+        </div><!--/sidebar -->
+      </div><!--/row-->
+    </div><!--/container-->
+
+    <div class="container">
+      <footer id="page-footer">
+ 
+        <address id="colophon">
+          Blog powered by <a href="http://getpelican.com/">Pelican</a>
+                      and <a href="http://python.org">Python</a>  
+		  &nbsp;&bull;&nbsp;
+		  <a href="https://github.com/robulouski/voidy-bootstrap"
+			 target="_blank">VoidyBootstrap</a> theme by 
+		  <a href="http://www.voidynullness.net"
+			 target="_blank">RKI</a>  
+        </address><!-- /colophon  -->
+      </footer>
+	</div>
+
+<!-- DISQUS script for displaying comment count -->
+<script type="text/javascript">
+    var disqus_shortname = 'forwilgithubio';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+    <!-- javascript -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </body>
+</html>

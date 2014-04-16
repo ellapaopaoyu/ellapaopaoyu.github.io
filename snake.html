@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Oranges1 - Flat land</title>
+    <title>Snake! - Flat land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="Forwil" />
@@ -58,12 +58,12 @@
   <header>
 <div class="article-header">
     <abbr class="article-prehead">
-	  Mon 07 April 2014
+	  Tue 01 January 2013
 	</abbr> <!-- /.article-prehead -->
 	<h1>
-	  <a href="http://forwil.github.io/oranges1.html" rel="bookmark"
-		 title="Permalink to Oranges1">
-		Oranges1
+	  <a href="http://forwil.github.io/snake.html" rel="bookmark"
+		 title="Permalink to Snake!">
+		Snake!
 	  </a>
 	</h1>
     <div class="article-posthead">
@@ -77,14 +77,54 @@
 	</div> <!-- /.article-posthead -->
 </div> <!-- /.article-header -->  </header>
   <div class="content-body" itemprop="text articleBody">
-	<p>今天开始读《ORANGES’一个操作系统的实现》，边看边动手果然乐趣无穷，解决了一些平台上的软件问题。理解了x86的实模式到虚模式的跳转，真是有够神奇。。</p>
-<p>不过还真是越读越复杂，好烦。。</p>
+	<p>游戏简介：</p>
+<p>警告：= =这是我的java大作业，主要是为了实现其功能，对于细节并没有作太大的修正和测试，不算一款正式的游戏。只是提供一个对游戏新模式的思考。由于这是我人生中第一个图形化游戏，意义重大，所以了发上来。</p>
+<p>本质上这是一款贪吃蛇游戏，操作方式为WASD(上左下右)，为了支持手残人士主任所以用方向键也行。运行之后会出现这个玩意：<!--more--></p>
+<p><img src="http://fmn.rrimg.com/fmn062/20121230/1240/original_iRcy_43c5000064c7125d.jpg" alt="1" /></p>
+<p>选择1能进入闯关模式，选择0可以进入自(wu)由(liao)模式。如果输入的不是1和0的话，有一定几率跳会出一只光头-------ㄟ(▔皿▔ㄟ)。开玩笑的。</p>
+<p>游戏中的你是这样的</p>
+<p><img src="http://fmn.rrimg.com/fmn060/20121230/1250/original_f0NC_3108000055891191.jpg" alt="2" /></p>
+<p>一坨翔一样的东西。</p>
+<p>http://fmn.rrimg.com/fmn060/20121230/1250/original_drzO_61f300006610125b.jpg<img src="http://fmn.rrimg.com/fmn060/20121230/1250/original_drzO_61f300006610125b.jpg" alt="3" /></p>
+<p>上边这是你的嘎嘣脆的食物。</p>
+<p>一旦你靠近它：</p>
+<p><img src="http://fmn.rrimg.com/fmn060/20121230/1250/original_ftAe_4792000064f1125c.jpg" alt="4" /></p>
+<p>吃下它后你就会。。长出一坨新鲜的绿翔跟在你身后：</p>
+<p><img src="http://fmn.rrimg.com/fmn058/20121230/1250/original_JYOX_443d000065ac125d.jpg" alt="5" /></p>
+<p>接下去你十分开心，就可以一只吃吃吃吃，直到自己变成一坨很长的翔，一旦你吃够了下边所标注的食物，你就进入下一关。</p>
+<p><img src="http://fmn.rrimg.com/fmn062/20121230/1250/original_oReh_0f9b000064fd118d.jpg" alt="6" /></p>
+<p>闯关模式现在一共只有13关，都是我精(sui)心(bian)设计的</p>
+<p>当玩到第四关时，游戏里有(dan)趣(teng)的元素就粗线了，一对同颜色的点表示传送门，这样一来你就可以跑来跑去啦。</p>
+<p>另外如果你觉得自己的蛇慢的一笔，可以按"J"键捅蛇一下，让它加速，"k"键减速。</p>
+<p>警告：想尝试一下鬼畜的滋味么？那么请选择速度⑨。。。</p>
+<p>第4关是这样的：</p>
+<p><img src="http://fmn.rrimg.com/fmn056/20121230/1250/original_7hrE_2a9700006573118e.jpg" alt="7" /></p>
+<p>第6关是这样的：</p>
+<p><img src="http://fmn.rrimg.com/fmn064/20121230/1250/original_Bj3K_2a3e00006509118e.jpg" alt="8" /></p>
+<p>第⑨关：</p>
+<p><img src="http://fmn.rrimg.com/fmn061/20121230/1250/original_Nuhp_161c00006567118f.jpg" alt="9" /></p>
+<p>另外为了满足大众的小清新口味。我们特地添加“一键拉翔”功能，一旦你觉得你吃某颗东西的姿势不对，你可以按下"L"键把它排出体外，但被你遗弃的翔接触到空气后会变得异常坚硬，变成石头。。。</p>
+<p>比如：</p>
+<p><img src="http://fmn.rrimg.com/fmn057/20121230/1250/original_i0SX_326e000055631191.jpg" alt="10" /></p>
+<p>你走着走着，突然。</p>
+<p><img src="http://fmn.rrimg.com/fmn057/20121230/1250/original_acND_62a700006647125b.jpg" alt="11" /></p>
+<p>吧嗒，落下一坨热(jie)翔(chao)</p>
+<p>然后你的长度就会减小，同样的。。。。。你的point也降低了。。。</p>
+<p>(┴—┴ （ ╰(｀□′╰)】 这不坑爹么！！！！)</p>
+<p>没错= =</p>
+<p>这个功能确实是为了坑大家而设的，至今想不出拉翔对一只以翔为生的蛇有什么帮助(深思中。。)。</p>
+<p>希望你们玩得愉快。o～(▔▽▔o～)</p>
+<p>下载链接：<a href="http://rrurl.cn/aC8FkC" title="点此下载" target="_blank">点此下载</a></p>
+<p>ps:其实我是来求测试求bug的。</p>
+<p>pps:如果有兴趣根据这个写地图求代码的小盆宇可以在下边留言。</p>
+<p>ppps:主程序是jar，请自行安装jre 使用java -jar 路径运行。。。</p>
+<p>pppps:以贪吃蛇为基础发展出一套游戏系统是个好想法。。</p>
   </div>
 
 
 <div class="article-tag-list">
 <span class="label label-default">Tags</span>
-	<a href="http://forwil.github.io/tag/learning.html"><i class="fa fa-tag"></i>learning</a>&nbsp;
+	<a href="http://forwil.github.io/tag/old.html"><i class="fa fa-tag"></i>old</a>&nbsp;
 </div>
   <hr />
 
