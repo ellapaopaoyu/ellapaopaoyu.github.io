@@ -73,13 +73,15 @@
 	var DOWN = 40;
 	var old = document.onkeydown; 
 	var f = function(e) { 
-		mat.move(e.which)
-		mat.newone(2);
-		if(!mat.over){
-			document.onkeydown = f; 
-		}else
-		{
-			document.onkeydown = old;
+		if(e.which == LEFT || e.which == RIGHT || e.which == UP || e.which == DOWN){
+			mat.move(e.which)
+			mat.newone(2);
+			if(!mat.over){
+				document.onkeydown = f; 
+			}else
+			{
+				document.onkeydown = old;
+			}
 		}
 	} 
 
