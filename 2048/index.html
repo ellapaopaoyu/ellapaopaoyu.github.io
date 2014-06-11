@@ -74,7 +74,33 @@
 	var UP = 38;
 	var DOWN = 40;
 	var old = document.onkeydown; 
+	var sock = new WebSocket("ws://192.168.9.42:8000");
+	var message =  function(e){
+		msg.set(e.data);
+		if (e.data == "4"){
+			mat.move(LEFT);
+			mat.newone(2);	
+		}
+		if (e.data == "6"){
+			mat.move(RIGHT);
+			mat.newone(2);	
+		}
+		if (e.data == "8"){
+			mat.move(UP);
+			mat.newone(2);	
+		}
+		if (e.data == "5"){
+			mat.move(DOWN);
+			mat.newone(2);	
+		}
+		if(mat.over){
+			sock.onmessage = null;
+		}
+	}	
+
+	sock.onmessage = message;
 	var f = function(e) { 
+		msg.set(e.which);
 		if(e.which == LEFT || e.which == RIGHT || e.which == UP || e.which == DOWN){
 			mat.move(e.which)
 			mat.newone(2);
@@ -218,5 +244,30 @@
 	}
 	mat.init();	
 	</script> 
+
+  <div class="comments">
+	<h2>Comments</h2>
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+				   (function() {
+						var dsq = document.createElement('script');
+						dsq.type = 'text/javascript'; dsq.async = true;
+						dsq.src = 'http://forwilgithubio.disqus.com/embed.js';
+						(document.getElementsByTagName('head')[0] ||
+						 document.getElementsByTagName('body')[0]).appendChild(dsq);
+				  })();
+	</script>
+  </div>
+
+<!-- DISQUS script for displaying comment count -->
+<script type="text/javascript">
+    var disqus_shortname = 'forwilgithubio';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 	</body>
 </html>
