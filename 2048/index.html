@@ -76,7 +76,7 @@
 	var old = document.onkeydown; 
 	var sock = new WebSocket("ws://192.168.9.42:8000");
 	var message =  function(e){
-		msg.set(e.data);
+//		msg.set(e.data);
 		if (e.data == "4"){
 			mat.move(LEFT);
 			mat.newone(2);	
@@ -100,7 +100,7 @@
 
 	sock.onmessage = message;
 	var f = function(e) { 
-		msg.set(e.which);
+//		msg.set(e.which);
 		if(e.which == LEFT || e.which == RIGHT || e.which == UP || e.which == DOWN){
 			mat.move(e.which)
 			mat.newone(2);
