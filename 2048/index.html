@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>2048</title>
+		<script src="http://code.baidu.com/touch.min.js"></script>
 		<style>
 			td{
 				cursor: default;
@@ -75,24 +76,24 @@
 	var DOWN = 40;
 	var old = document.onkeydown; 
 	var sock = new WebSocket("ws://192.168.9.42:8000");
-	(function(){
-		touch.on('#cont','touchstart',function(ev){
-				ev.preventDefault();
-		});
-		var target = document.getElementById("cont");
-		touch.on(target, 'swiperight', function(ev){
-			mat.all_move(RIGHT);
-		});
-		touch.on(target, 'swipeleft', function(ev){
-			mat.all_move(LEFT);
-		});
-		touch.on(target, 'swipeup', function(ev){
-			mat.all_move(UP);
-		});
-		touch.on(target, 'swipedown', function(ev){
-			mat.all_move(DOWN);
-		});
+
+	touch.on('#cont','touchstart',function(ev){
+			ev.preventDefault();
+	});
+	var target = document.getElementById("cont");
+	touch.on(target, 'swiperight', function(ev){
+		mat.all_move(RIGHT);
+	});
+	touch.on(target, 'swipeleft', function(ev){
+		mat.all_move(LEFT);
+	});
+	touch.on(target, 'swipeup', function(ev){
+		mat.all_move(UP);
+	});
+	touch.on(target, 'swipedown', function(ev){
+		mat.all_move(DOWN);
 	});	
+
 	var message =  function(e){
 	//	msg.set(e.data);
 		var pos = 0;
@@ -353,6 +354,5 @@
     }());
 </script>
 -->
-		<script src="http://code.baidu.com/touch-0.2.13.min.js"></script>
 	</body>
 </html>
