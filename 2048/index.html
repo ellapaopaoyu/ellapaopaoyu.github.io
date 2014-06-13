@@ -75,6 +75,24 @@
 	var DOWN = 40;
 	var old = document.onkeydown; 
 	var sock = new WebSocket("ws://192.168.9.42:8000");
+	(function(){
+		touch.on('#cont','touchstart',function(ev){
+				ev.preventDefault();
+		});
+		var target = document.getElementById("cont");
+		touch.on(target, 'swiperight', function(ev){
+			mat.all_move(RIGHT);
+		});
+		touch.on(target, 'swipeleft', function(ev){
+			mat.all_move(LEFT);
+		});
+		touch.on(target, 'swipeup', function(ev){
+			mat.all_move(UP);
+		});
+		touch.on(target, 'swipedown', function(ev){
+			mat.all_move(DOWN);
+		});
+	});	
 	var message =  function(e){
 	//	msg.set(e.data);
 		var pos = 0;
@@ -199,7 +217,7 @@
 		32:"#FF7F00",
 		64:"#FF4040",
 		128:"#FF3030",
-		258:"#FF2525",
+		256:"#FF2525",
 		512:"#FF1818",
 		1024:"#FF1010",
 		2048:"#FF0000"
@@ -218,11 +236,6 @@
 	}
 
 	mat.newone = function(v){
-		if(mat.isfull()){
-			alert("game over");
-			mat.over = true;
-			return;
-		}
 		var x = Math.floor(Math.random() * 4);
 		var y = Math.floor(Math.random() * 4);
 		while(true){
@@ -308,6 +321,10 @@
 				}
 			}		
 		}
+		if(!flag && mat.isfull()){
+			alert("game over");
+			mat.over = true;
+		}
 		return flag;
 	}
 	mat.init();	
@@ -336,5 +353,6 @@
     }());
 </script>
 -->
+		<script src="http://code.baidu.com/touch-0.2.13.min.js"></script>
 	</body>
 </html>
