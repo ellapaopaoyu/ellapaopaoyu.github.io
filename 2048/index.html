@@ -77,21 +77,24 @@
 	var sock = new WebSocket("ws://192.168.9.42:8000");
 	var message =  function(e){
 	//	msg.set(e.data);
+		var pos = 0;
 		if (e.data == "4"){
-			mat.all_move(LEFT);
-			mat.newone(2);	
+			pos = LEFT;
 		}
 		if (e.data == "6"){
-			mat.all_move(RIGHT);
-			mat.newone(2);	
+			pos = RIGHT;
 		}
 		if (e.data == "8"){
-			mat.all_move(UP);
-			mat.newone(2);	
+			pos = UP;
 		}
 		if (e.data == "5"){
-			mat.all_move(DOWN);
-			mat.newone(2);	
+			pos = DOWN;
+		}
+		if(pos != 0){
+			var flag = mat.all_move(pos);
+			if (flag){
+				mat.newone(2);
+			}
 		}
 		if(mat.over){
 			sock.onmessage = null;
@@ -102,15 +105,16 @@
 	var f = function(e) { 
 	//	msg.set(e.which);
 		if(e.which == LEFT || e.which == RIGHT || e.which == UP || e.which == DOWN){
-			mat.all_move(e.which)
-			mat.newone(2);
+			var flag = mat.all_move(e.which);
+			if(flag){
+				mat.newone(2);
+			}
 			if(!mat.over){
 				document.onkeydown = f; 
 			}else
 			{
 				document.onkeydown = old;
 			}
-			e.keyCode = 0;
 		}
 	} 
 
@@ -125,7 +129,7 @@
 				mat.setvc(i,j,0,"white")
 			}
 		}	
-		mat.rander();
+		mat.newone(2);
 		document.onkeydown = f; 
 	}
 
@@ -229,9 +233,10 @@
 		}		
 		this.setv(x,y,v);
 		this.rander();
-		this.rows[x].cells[y].style["background"] = "#98FB98";
+		this.rows[x].cells[y].style["background"] = "#AAFBAA";
 	}
 	mat.move = function(i,j,key){
+		var flag = false;
 		if(this.getv(i,j) != 0){
 			var ii = i,ti = i;
 			var jj = j,tj = j;
@@ -253,44 +258,61 @@
 				tj = jj;
 			}
 			var temp = this.getv(i,j);
-			this.setv(i,j,0);
+			var pi = ti,pj = tj;
 			if(isin(ii,jj) && temp == this.getv(ii,jj)){
-				this.setv(ii,jj,this.getv(ii,jj) + temp);
-			}else{
-				this.setv(ti,tj,temp);
+				pi = ii;
+				pj = jj;
+			}
+			if(pi != i || pj != j){
+				flag = true;
+				temp += this.getv(pi,pj);
+//				msg.set(i + " " + j + " " + pi + " " + pj );
+				this.setv(i,j,0);
+				this.setv(pi,pj,temp);
 			}
 		}
+		return flag;
 	}
 
 	mat.all_move = function(key){
+		var flag = false;
 		if(key == UP){
 			for(var i = 0;i < 4;i++){
-				for(var j = 0;j < 4;j++)
-					this.move(i,j,key);
+				for(var j = 0;j < 4;j++){
+					var f = this.move(i,j,key);
+					flag = flag || f;
+				}
 			}
 		}
 		if(key == DOWN){
 			for(var i = 3;i >= 0;i--){
-				for(var j = 0;j < 4;j++)
-					this.move(i,j,key);
+				for(var j = 0;j < 4;j++){
+					var f = this.move(i,j,key);
+					flag = flag || f;
+				}
 			}
 		}
 		if(key == LEFT){
 			for(var j = 0;j < 4;j++){
-				for(var i =0; i<4;i++)
-					this.move(i,j,key);
+				for(var i =0; i<4;i++){
+					var f = this.move(i,j,key);
+					flag = flag || f;
+				}
 			}			
 		}
 		if(key == RIGHT){
 			for(var j = 3;j >= 0;j--){
-				for(var i =0; i<4;i++)
-					this.move(i,j,key);
+				for(var i =0; i<4;i++){
+					var f = this.move(i,j,key);
+					flag = flag || f;
+				}
 			}		
 		}
+		return flag;
 	}
 	mat.init();	
 	</script> 
-
+<!--
   <div class="comments">
 	<h2>Comments</h2>
 	<div id="disqus_thread"></div>
@@ -304,8 +326,6 @@
 				  })();
 	</script>
   </div>
-
-<!-- DISQUS script for displaying comment count -->
 <script type="text/javascript">
     var disqus_shortname = 'forwilgithubio';
     (function () {
@@ -315,5 +335,6 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
+-->
 	</body>
 </html>
