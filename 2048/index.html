@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>2048</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<script src="http://code.baidu.com/touch.min.js"></script>
 		<style>
 			td{
@@ -201,10 +202,12 @@
 		if(v != 0){
 			this.rows[i].cells[j].innerHTML = v;
 			this.rows[i].cells[j].style["border"] ="";
+			this.rows[i].cells[j].style["box-shadow"] = "2px 2px 2px grey"; 
 		}
 		else{
 			this.rows[i].cells[j].innerHTML = "";
 			this.rows[i].cells[j].style["border"] = "0px";
+			this.rows[i].cells[j].style["box-shadow"] = "" ;
 		}
 		this.rows[i].cells[j].style["background"] = this.v2c(v);
 	}
