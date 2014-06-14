@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<title>2048</title>
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<script src="http://code.baidu.com/touch.min.js"></script>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<style>
 			td{
 				cursor: default;
@@ -83,16 +83,24 @@
 	});
 	var target = document.getElementById("cont");
 	touch.on(target, 'swiperight', function(ev){
-		mat.all_move(RIGHT);
+		var flag = mat.all_move(RIGHT);
+		if(flag)
+			mat.newone(2);
 	});
 	touch.on(target, 'swipeleft', function(ev){
-		mat.all_move(LEFT);
+		var flag= mat.all_move(LEFT);
+		if(flag)
+			mat.newone(2);
 	});
 	touch.on(target, 'swipeup', function(ev){
-		mat.all_move(UP);
+		var flag = mat.all_move(UP);
+		if(flag)
+			mat.newone(2);
 	});
 	touch.on(target, 'swipedown', function(ev){
-		mat.all_move(DOWN);
+		var flag = mat.all_move(DOWN);
+		if(flag)
+			mat.newone(2);
 	});	
 
 	var message =  function(e){
