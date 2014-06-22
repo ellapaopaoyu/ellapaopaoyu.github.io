@@ -1,1 +1,1 @@
-alert("good");
+alert(document.cookie);
