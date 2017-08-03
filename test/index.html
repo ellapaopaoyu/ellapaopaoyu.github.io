@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>None</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<style>
+			td{
+				cursor: default;
+				font-size: xx-large;
+				border-radius: 10px;
+				border: 0px solid black;
+				width: 80px;
+				height: 80px;
+				text-align: center;
+			}
+            #input{
+                margin: 20 auto auto auto;
+            }
+			#mat{
+				margin: 20 auto auto auto;
+			}
+			#msg{
+				margin: 1 auto auto auto;
+			}
+			#cont{
+				border-radius: 10px;
+				border: 2px solid black;
+				width: 200px;	
+				height: 150px;
+				margin: 20 auto auto auto;
+			}
+			#get{
+				margin: 10 auto auto auto;
+				background: #FFE7BA;
+				border-radius: 10px;
+				border: 1px solid black;
+				width: 100px;
+				height: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				text-align: center;
+			}
+			#get:hover{
+				background: #FFE74A;
+				cursor: hand;
+			}
+            #result{
+                margin: 20 auto auto auto;
+            }
+		</style>
+	</head>
+	<body>
+		<div id="cont">
+            name: <input id="input" type="text" name="user_name" />
+			<div  id="get" onclick = "get_group()" href="" >
+					Get
+			</div>
+			<div  id="result">
+                result:
+			</div>
+		</div>
+	<script type="text/javascript"> 
+    get_group = function(){
+        var v = document.getElementById("input").value;
+var m = {
+    "\u718a\u732b": [
+        "\u6731\u7693\u5929", 
+        "\u5434\u73a5", 
+        "\u5f90\u6b63\u5929", 
+        "\u8bb8\u9f91", 
+        "\u5f20\u6770", 
+        "\u5f20\u5b66\u68ee", 
+        "\u8d75\u5b87\u822a", 
+        "\u90d1\u6d01\u5b9b", 
+        "\u5468\u8f89", 
+        "\u6731\u653f"
+    ]
+};
+        var find = false;
+        var result = "";
+		for(var i in m){
+            for(var j = 0;j < m[i].length;j++){
+                if(v == m[i][j]){
+                    find = true;
+                    result = i;
+                    break;
+                }
+            }
+            if(find){
+                break;
+            }
+		}	
+        if(!find){
+            result = "None";
+        }
+        document.getElementById("result").innerHTML = "Your group is in:" +  result;
+	}
+
+	</script> 
+	</body>
+</html>
