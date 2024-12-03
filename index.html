@@ -36,15 +36,11 @@ a.paper {
   font-size: 12pt;
 }
 
-b.paper 
+b.paper {
   font-weight: bold;
   font-size: 12pt;
 }
 
-* {
-  margin: 0pt;
-  padding: 0pt;
-}
 
 body {
   position: relative;
@@ -149,6 +145,17 @@ div.paper pre {
   font-size: 0.9em;
 }
 
+ /* 设置图片的样式 */
+ .centered-image {
+            max-width: 70%; /* 图片最大宽度为90%，但不超过其原始大小 */
+            height: auto; /* 高度自适应 */ 
+            transition: transform 0.3s ease; /* 平滑的缩放效果 */
+            margin: 0 240;
+        }
+        .centered-image:hover {
+            transform: scale(1.05); /* 鼠标悬停时放大图片 */
+        }
+
 </style>
 
 <script type="text/javascript">
@@ -167,6 +174,8 @@ div.paper pre {
 
 <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
  rel="stylesheet" type="text/css" />
+
+
 </head>
 
 <body>
@@ -191,9 +200,10 @@ div.paper pre {
 <div class="section">
 <h2>About Me</h2>
   <div class="paper">
-    <p>
+
+    <p style="text-align: justify;">
       After graduating in June 2019, I embarked on a journalism career. Beyond merely chasing news, my focus extended to delivering insightful perspectives, particularly in the tech industry. Later, as Brand PR Manager at a company in the new energy electric motorcycle sector, I applied my corporate understanding gained in journalism to shape the brand’s image. This four-year journey revealed the crucial link between enterprises and  the  media,  clarifying  my  future  career  direction.
-      
+    </p>
   
     </p>
     </br>
@@ -238,14 +248,113 @@ div.paper pre {
 <div class="section">
 <h2 id="reports">Publications</h2>
 <div class="paper">
-
-1. <a href="https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247485110&idx=1&sn=06aa5e77fba54c22e7610319769339bd&chksm=fcc9b90fcbbe3019b705bee8361dba474e945dc1dc2468a45ae74f400e0fb11a5cea12692760&mpshare=1&scene=1&srcid=1019zYYXKL1YVAZ7m2357RQJ&sharer_sharetime=">Fu Sheng: Reflection at the Cliff's Edge (傅盛：悬崖边的反思)</a> 
+ 
+1.  <p style="text-align: justify;"><a href="https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247485110&idx=1&sn=06aa5e77fba54c22e7610319769339bd&chksm=fcc9b90fcbbe3019b705bee8361dba474e945dc1dc2468a45ae74f400e0fb11a5cea12692760&mpshare=1&scene=1&srcid=1019zYYXKL1YVAZ7m2357RQJ&sharer_sharetime=">Fu Sheng: Reflection at the Cliff's Edge (傅盛：悬崖边的反思)</a> 
 </p>  Yangyang Yu, Wei Song, Xiaoyu Zhang. 2020 Latepost. 
 </p>2. <a href="https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247485271&idx=1&sn=966c7a1cd1c7f0d46b314474645f33bd&chksm=fcc9b8eecbbe31f8bf4bca6361427a94c25c0af5a4d052d65a18f2fb7eeb7db271997aa31d92&mpshare=1&scene=1&srcid=1019MQ1FAQC7swxlYSKr8hH2&sharer_sharetime=">BIGO: The Champion of Survival in Globalization's Interstices（BIGO：全球化夹缝中的生存冠军)</a>
 </p> Shiyun Li, Yangyang Yu, Wei Song, Xiaoyu Zhang. 2020 Latepost.</p> 3.<a href="https://mp.weixin.qq.com/s/FvKZD99AA1SsyPHsQO6hsA">Part One: Beyond Wuhan: A Comprehensive Record of 17 Cities in Hubei's Epidemic Zone (不止有武汉：湖北疫区17城全记录上篇）</a>
 </p> YiLiu Fanggong, Wei Song, Shiyun Li, Yiwen Guan, Jing Chen, Yangyang Yu, Kexin Ma, Fan Zhang. 2020 Latepost.
 </p>4. <a href="https://mp.weixin.qq.com/s/6mSSZ8d7rjJ1OCCm3Xi2XA?poc_token=HCdDN2ej9cJUvKh9-NtUjhXtvZxrs6lC4iUWOjtr">Part Two: Beyond Wuhan: A Comprehensive Record of 17 Cities in Hubei's Epidemic Zone (不止有武汉：湖北疫区17城全记录下篇）.</a> 
 </p> YiLiu Fanggong, Shiyun Li, Yiwen Guan, Wei Song, Honghao Gao, Yangyang Yu, Jing Chen, Fan Zhang, Kexin Ma. 2020 Latepost.
+</p> 5. <a href="https://mp.weixin.qq.com/s/jxOZCTn_v5itXJ0YPffPmQ">	Siege in India: Some Hasten Their Escape, Others Earn Frenziedly (印度围城：有人在加速逃离，有人在疯狂赚钱).</a>
+</p> Shiyun Li, Yangyang Yu, Junjie Huang. 2020 Latepost.
+</p>6.<a href="https://mp.weixin.qq.com/s/tB-Q2xiHKaj8nNbP-iYzoQ">	Scientists Start to Master Earning Money (科学家们开始学会赚钱).</a>
+</p>Yimi Yao, Yangyang Yu, Wei Song. 2020 Latepost.
+</p>7.<a href="https://mp.weixin.qq.com/s/KjstHbLmTvovy72yGR0CmA">	Adventure "Virus cruise" : 621 people infected on the Diamond Princess (历险“病毒邮轮”：钻石公主号621人感染始末).</a>
+</p>Honghao Gao, Yiwen Guan, Wei Song. 2020 Latepost.
+</p>8.<a href="https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247485686&idx=1&sn=b9e4b15fa9e3a4694d175bed2dd26a14&chksm=fcc9b74fcbbe3e599cd2b5b8e9fde9e1a2be03b002ade7188c1eea79b921ac06f4cecf9ae3a8&mpshare=1&scene=1&srcid=1019YIRTnXQUr3E0ogdDBkjY&sharer_sharetime=">	Six Months into Entrepreneurship and First Financing: What Happened to Jia Jiaya After Leaving Tencent? (创业半年、拿到第一笔融资，贾佳亚离开腾讯之后经历了什么？).</a>
+</p>Yangyang Yu, Junjie Huang. 2020 Latepost.
+</p>9.<a href="https://mp.weixin.qq.com/s?__biz=MzU3Mjk1OTQ0Ng==&mid=2247485738&idx=1&sn=7bee17efdb185cf0a3465035cc2842a9&chksm=fcc9b693cbbe3f85b30eeb8126c2826076c644f0dd187d6aae723c4e27101cf559e6ccfb193e&mpshare=1&scene=1&srcid=1019ttQ70fS2K1InsjrCT4h7&sharer_sharetime=">	LatePost Exclusive | SenseTime Valued at $10 Billion, Undergoing Fundraising and Seeking New Growth Avenues
+  (晚点独家｜商汤科技估值 100 亿美元融资进行中，寻找新的增长点).</a>
+</p>Yangyang Yu, Junjie Huang. 2020 Latepost.
+</p>10.<a href="https://mp.weixin.qq.com/s/ges1pzuljMpcNY2dug6BYQ">	Latepost exclusive | MegVII suspends its Hong Kong stock listing plan, swinging between returning to A and going to Hong Kong(晚点独家｜旷视中止港股上市计划，在回A与赴港之间摇摆).</a>
+</p>Yangyang Yu, Junjie Huang. 2020 Latepost.
+</p>11.<a href="https://xueqiu.com/7410422581/159851333">	LatePost Exclusive | Turing Award Winner Professor Yao Qizhi Launches VC Fund: "Scientists Can Be Entrepreneurs Too" (晚点独家｜图灵奖得主姚期智教授创立 VC 基金，“科学家也可以做企业家”).</a>
+</p>Yangyang Yu, Junjie Huang. 2020 Latepost.
+</p>12.<a href="https://mp.weixin.qq.com/s/tB-Q2xiHKaj8nNbP-iYzoQ">	LatePost Exclusive | Jia Jiaya, Former Head of Tencent Youtu Lab, Establishes AI Company with Pre-A Round
+  Funding Secured (晚点独家｜原腾讯优图实验室负责人贾佳亚创立 AI 公司，目前已获 Pre-A 轮融资).</a>
+</p>Yangyang Yu, Honghao Gao, Wei Song. 2020 Latepost.
+</p>13.<a href="https://mp.weixin.qq.com/s/FU3fmmdOEAKPO2NXf6yzJg">	Behind CloudWalk's 1.8 billion financing from state-funded funds: AI unicorns compete to grab new markets (云从科技获国资基金18亿融资背后：AI独角兽争相抢夺新市场).</a>
+</p>Yangyang Yu, Wei Song. 2020 Latepost.
+</p>14.<a href="https://mp.weixin.qq.com/s/oMH_PsXBVgiT5iWVIRuS_A">	Internet People, Trapped in the Days Waiting for IPO | Shenke (互联网人，困在等待上市的日子里丨深氪).</a>
+</p>Yangyang Yu, Xuan Yang. 2021 36kr.
+</p>15.<a href="https://mp.weixin.qq.com/s/UIitpZuLpF5k74XVlJPArQ">	Earn 5 Million in 2 Months: Catching the Last Dividend on Wechat Video Accounts | Rearview Mirror (2 个月挣 500 万，
+  在视频号抓住最后的红利｜反光镜).</a>
+</p>Yangyang Yu, Qian Qiao. 2021 36kr.
+</p>16.<a href="https://36kr.com/p/1495637251453312">	36Kr Exclusive | ByteDance 2021 Advertising Revenue: Double-Digit Growth in the First Half of the Year, Stagnation in Q3 (36 氪独家 | 字节跳动 2021 广告收入：上半年双位数增长，第三季度陷入停滞) (36Kr Editor-in-Chief Award).</a>
+</p>Yangyang Yu, Xuan Yang, Xinyu Zhang. 2021 36kr.
+</p>17.<a href="https://edit.newrank.cn/detail.html?uuid=AE0D07F23C50D563FC51FC9FBF4133F4"> 36Kr Exclusive | Tencent's Further Layoffs: Impacting WeChat Video Accounts, Gaming, Strategic Investments, and Cutting into Management (36 氪独家 | 腾讯再裁员：波及微信视频号、游戏、战略投资，对管理层动刀) (36KrEditor-in-Chief Award).</a>
+</p>Yangyang Yu, Xuan Yang. 2022 36kr.
+</p>18.<a href="https://mp.weixin.qq.com/s/qwGvCXT2bKmBMWG-nW3z8w"> Douyin E-commerce, the Hope of the Entire Village | Shenke (抖音电商，全村的希望｜深氪)（36Kr WeChat Public Account views: 60k+)</a>
+</p>Yangyang Yu, Qian Peng, Lan Yao, Qian Qiao, Xuan Yang. 2022 36kr.
+</p>19.<a href="https://mp.weixin.qq.com/s/UIitpZuLpF5k74XVlJPArQ">200,000 College Students Flock to BYD, But There's No Room for the Dream of Wealth | Rearview Mirror (20 万大学生涌向比亚迪，但这里装不下造富梦｜反光镜)（36Kr WeChat Public Account views: 100k+)</a>
+</p>Qian Zhou, Youhui Zhou, Cancheng Zheng, Yangyangyu. 2022 36kr.
+<p></br>
+<h2>Projects & Datasets</h2>
+<p></br>
+<p><p style="text-align: justify;"><a href="http://sh.autochinashow.org/">2023 Shanghai International Automobile Industry Exhibition</a>, Led <a href="https://horwin.com/about-n">Horwin</a>’s PR and social media communication. Crafted speeches for the press conference and prepared press releases. Successfully invited over 100 media outlets, resulting in a total of over 102 articles. Devised and executed a strategy that produced 5 articles on the company’s WeChat official account during the exhibition.</p>
+</br>Brand promotion</p></br>
+<p>Articles
+</p>
+<p>
+
+</p>
+<p>Videos
+</p>  <img class="centered-image" src="./images/pintu0.png" alt="Video Thumbnail">
+</br>Media Report</p></br>
+<p>Articles</p>
+<p>Videos</p>
+<p><img class="centered-image" src="./images/pintu1.png" alt="Video Thumbnail">
+</p>
+<p><p style="text-align: justify;"><a href="https://cimamotor.com/?fid=217565041/568446949.csv&ivk_sa=1024320u">2023 Chongqing International Motorcycle Trade Exhibition</a>, Orchestrated the PR and social media communication strategy. Drafted news releases, social
+  media copies, and various promotional materials. Invited over 20 media professionals for product experience trials and test drives, generating over 30 in-depth reports on platforms like TikTok and other video-sharing sites. Garnered attention from top-tier media including Xinhua News Agency, Chongqing Television Station, and 36Kr, resulting in over 100 articles across various platforms. Collaborated with the sales department, achieving a conversion of hundreds users seeking car consultations.</p>
+<p>
+</br>Brand promotion</p></br>
+<p>Articles
+</p>
+<p>
+
+</p>
+<p>Videos
+  <p><img class="centered-image" src="./images/pintu2.png" alt="Video Thumbnail">
+  </p>
+  </br>Media Report</p></br>
+<p>Articles</p>
+<p>Videos</p>
+</br>
+<p><img class="centered-image" src="./images/pintu4.png" alt="Video Thumbnail">
+</p>
+</br>
+       <p class="custom-text">
+    <a href="https://www.bilibili.com/video/BV1sz4y1V74g/?spm_id_from=333.337.search-card.all.click&vd_source=ff40dbaff929ce4ffd21ea2c1772b44c" style="text-align: justify;">Walking with Scientists</a>, Collaborated with Chinese Academy of Sciences academician Liu Jiaqi and Bilibili influencer Wang Shengxian to promote Horwin’s documentary series Walking with Scientists across platforms like Red, Bilibili, TikTok, and WeChat. Partnered with product and design teams to create high-quality promotional materials, achieving 100,000+ views on Bilibili and 200,000+ total views across platforms, driving strong audience engagement.
+</p>
+
+
+
+</br>
+ <!-- 使用<a>标签创建一个链接，href属性设置为视频链接 -->
+  <div>
+  <a href="https://www.bilibili.com/video/BV1sz4y1V74g/?spm_id_from=333.337.search-card.all.click&vd_source=ff40dbaff929ce4ffd21ea2c1772b44c" target="_blank">
+    <!-- 使用<img>标签插入图片，src属性设置为图片链接，并应用样式 -->
+    <img class="centered-image" src="https://pic.rmb.bdstatic.com/bjh/news/5d0f76e01bc9db481abaaa015b9c828e.png" alt="Video Thumbnail">
+  </p><p style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vlogger Video(Bilibili account views: 100,000+)</p></p>
+</a>
+</div>
+
+
+  </br>
+  
+  </body>
+  </html>
+        
+
+
+
+
+
+
+
+
 
 </div>
 
@@ -264,4 +373,7 @@ hideallabs();
 
 </body>
 
+</html>
+
+</body>
 </html>
